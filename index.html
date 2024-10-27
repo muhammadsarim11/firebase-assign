@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="button-group">
+                <button type="submit" id="signIn" class="btn">Sign In</button>
+                <button type="button" id="signup" class="btn signup">Sign Up</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-app-compat.js" ></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-auth-compat.js"></script>
+ <script>
+
+const firebaseConfig = {
+        apiKey: "AIzaSyBGaNohpjAhVpO5k35d-_IyUDY9JPHEdN0",
+        authDomain: "sign-app-3ffd9.firebaseapp.com",
+        projectId: "sign-app-3ffd9",
+        storageBucket: "sign-app-3ffd9.appspot.com",
+        messagingSenderId: "360714410000",
+        appId: "1:360714410000:web:08e321fc5f3db184f35295",
+        measurementId: "G-2TC1JVF6PP"
+      };
+      firebase.initializeApp(firebaseConfig);
+      
+ </script>
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+crossorigin="anonymous"></script>
+
+
+<script src="script.js"></script>
+</body> 
+</html>
